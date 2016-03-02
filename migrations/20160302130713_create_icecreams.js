@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('flavor');
     table.string('description');
-    table.json('imageUrl');
+    table.string('imageUrl');
   })
 };
 
