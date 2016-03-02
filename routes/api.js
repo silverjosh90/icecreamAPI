@@ -16,6 +16,7 @@ apiRouter.route('/icecreams')
     })
   })
   .post(function(req,res){
+    console.log(req.body);
     icecreams().insert(req.body).then(function(results){
       res.json({message: 'ice cream created!'})
     })
