@@ -6,13 +6,9 @@ module.exports = {
     client: 'pg',
     connection: 'postgres://localhost/icecream'
   },
-
   production: {
     client: 'pg',
-    connection: process.env.PRODUCTION_DATABASE_URL + '?ssl=true'
-  },
-  staging: {
-    client: 'pg',
-    connection: process.env.STAGING_DATABASE_URL + '?ssl=true'
+    connection: process.env.DATABASE_URL + '?ssl=true'
   }
+
 };
